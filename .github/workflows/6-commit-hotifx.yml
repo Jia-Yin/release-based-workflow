@@ -55,6 +55,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Switch to main
+        run:
+          git checkout main
+
       # Update README to close <details id=6>
       # and open <details id=7>
       # and set STEP to '7'
