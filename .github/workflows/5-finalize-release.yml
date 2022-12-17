@@ -58,6 +58,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Switch to main
+        run:
+          git checkout main
+
       # Update README to close <details id=5>
       # and open <details id=6>
       # and set STEP to '6'
